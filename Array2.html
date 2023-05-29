@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Array</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        const products = [
+            {
+                id: 0,
+                name: 'iPhone 14',
+                color: 'White',
+                price: 69000,
+                image: 'https://www.apple.com/v/home/aw/images/heroes/iphone-14/hero_iphone14__fjmsqstr1ceq_large.jpg'
+            },
+            {
+                id: 1,
+                name: 'iPhone 14 Pro',
+                color: 'Golden',
+                price: 59000,
+                image: 'https://www.apple.com/v/home/aw/images/promos/iphone-14-pro/promo_iphone14pro__4n4twj56fzmu_large.jpg'
+            },
+            {
+                id: 2,
+                name: 'iPad',
+                color: 'Black',
+                price: 39000,
+                image: 'https://www.apple.com/v/home/aw/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg'
+            }
+        ]
+
+        document.querySelectorAll('h1')[0].innerHTML =
+        products[1].name
+        //typeof products
+        //Array.isArray(products)
+        // products instanceof Array
+    </script>
+</body>
+</html>

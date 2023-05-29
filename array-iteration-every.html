@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Array Method every</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        // syntax: arrayName.every(callback)
+
+        const numbers = [12, 25, 135, 74, 502]
+        const test = numbers.every(result)
+        
+        function result(value, index, array) {
+            return value > 18
+        }
+        document.querySelector('output').innerHTML =
+        //  test
+        numbers
+    </script>
+</body>
+</html>

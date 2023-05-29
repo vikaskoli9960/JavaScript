@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Comparisons</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <input type="text" onchange="checkAge()" placeholder="Please enter your age">
+    <output></output>
+    <script>
+        function checkAge() {
+            let age = Number(document.querySelector('input').value)
+            let votable = (age >= 18) ? 'Old enough' : 'Too young'
+
+            if(isNaN(age)) votable = 'Please enter number'
+
+            if(age == '' || age == 0) votable = 'Please enter your age'
+            
+            document.querySelector('output').innerHTML = votable
+        }
+    </script>
+</body>
+</html>

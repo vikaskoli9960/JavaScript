@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10%;
+  font-family: system-ui;
+  width: 400px;
+  background-color: rgb(190, 249, 176);
+}
+
+output {
+  display: block;
+  margin: 10% auto;
+  outline: 3px solid rgb(207, 6, 242);
+  background-color: #40ffff;
+  padding: 9px;
+  border-radius: 5px;
+}

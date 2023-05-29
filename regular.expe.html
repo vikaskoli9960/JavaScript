@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>document</title>
+    <style>
+        body {
+            width: 300px;
+            height: 25px;
+            background-color: aqua;
+            padding: 16px;
+            margin: 10% auto;
+            outline: 3px solid rgb(207, 6, 242);
+            outline-offset: 1px;
+            border-radius: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <output></output>
+    <script>
+        let text = 'india is my contry'
+        let text2 = 'all indian ar my'
+        let find = text.search(/Text/i)
+        let replace = text.replace(/india/i, 'new text')
+        let match = text2.match(/is/i)
+        document.querySelector('output').innerHTML =
+            replace
+        // match
+    </script>
+</body>
+</html>

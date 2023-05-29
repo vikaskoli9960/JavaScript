@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Form validation</title>
+    <style>
+        body {
+            font-family: system-ui;
+        }
+        .error {
+            display:none;
+            color: red;
+        }
+        .show {
+            display: block
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Validation</h2>
+    
+    <form name="subscribe" onsubmit="return validation()" method="post">
+      Name: <input type="text" name="name" placeholder= 'Please add your name'>
+      <input type="submit" value="Submit">
+      <p class="error">Name must be filled out</p>
+    </form>
+    
+    <script defer>
+      function validation() {
+        let name = document.forms["subscribe"]["name"].value;
+        if (name == "") {
+          document.querySelector('.error').classList.add('show')
+          return false;
+        }
+      }
+    </script>
+</body>
+</html>

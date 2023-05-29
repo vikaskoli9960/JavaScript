@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Array Method entries</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        // syntax:  arrayName.entries()
+
+        const city = ['Pune', 'Nagpur', 'Mumbai', 'Sangli', 'Solapur']
+        const result = city.entries()
+
+        let text = ''
+        for(let i of result) {
+            text += `${i} <br>`
+        }
+        
+        document.querySelector('output').innerHTML = 
+        // Array.from(city.entries())
+        text
+    </script>
+</body>
+</html>

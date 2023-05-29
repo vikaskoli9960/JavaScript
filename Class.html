@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Class</title>
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <h2></h2>
+    <script>
+        class Person {
+            constructor(firstName, lastName, age) {
+                this.firstName = firstName
+                this.lastName = lastName
+                this.age = age
+            }
+
+            fullName() {
+                return `${this.firstName} ${this.lastName}`
+            }
+        }
+
+        const akash = new Person('Akash', 'More', 23)
+        const ganesh = new Person('Ganesh', 'Gholap', 25)
+
+        document.querySelector('h2').innerHTML = 
+        // `${ganesh.fullName()} is ${ganesh.age} years old.`
+        `${akash.fullName()} is ${akash.age} years old.`
+
+    </script>
+</body>
+</html>

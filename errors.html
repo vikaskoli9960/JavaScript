@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Errors</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <input type="text" placeholder="Please enter number" onchange="check()">
+    <output></output>
+
+<script>
+    function check(){
+        let message = document.querySelector('output')
+        let input = document.querySelector('input').value
+        
+        try {
+            if(input.trim() == '') throw 'Empty'
+            if(isNaN(input)) throw 'Please enter number'
+
+            input = Number(input)
+            
+            if(input < 5) throw 'Too low'
+            if(input >= 5 && input <= 10) throw 'Input ok'
+            if(input > 10) throw 'Too High'
+        } catch(error) {
+            message.innerHTML = error
+        } finally {
+            document.querySelector('input').value = ''
+        }
+    }
+
+    // try {
+    //     alerrt('Hello Javascript')
+    // }
+    // catch(error){
+    //     document.querySelector('output').innerHTML =
+    //     error.message
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .background {
+            background: rgb(129, 238, 163);
+            border-radius: 0.5em;
+        }
+        h1 {
+            background: rgb(234, 139, 220);
+            width: 300px;
+            height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button>Click here</button>
+    <h1>Hello Brother</h1>
+    <script>
+        let button = document.querySelector('button')
+        button.addEventListener('click', function(){
+            document.querySelector('h1').innerHTML = 'Hello Brother'
+        })
+        
+        button.addEventListener('mouseover', function(){
+            document.querySelector('h1').classList.add('background')
+        })
+        
+        button.addEventListener('mouseout', function(){
+            document.querySelector('h1').classList.remove('background')
+        })
+    </script>
+</body>
+</html>

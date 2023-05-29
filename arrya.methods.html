@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods - js</title>
+    <style>
+        * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: system-ui;
+  }
+  output {
+    display: block;
+    margin: 10% auto;
+    border: 2px solid rgb(167, 56, 252);
+    background: rgb(178, 250, 191);
+    padding: 9px;
+    border-radius: 5px;
+  }
+    </style>
+</head>
+<body>
+    <output></output>
+    <script>
+        const country = ['Saudiarab', 'China', 'USA', 'UK', 'France', 10]
+
+        let lastValue = country.pop()
+        
+        country.push('iran')
+
+        country.unshift('nepal')
+
+        country.shift()
+
+        let coutry2 = ['Brasil', 'UAE', 'Russia', 'Qatar']
+        
+        document.querySelector('output').innerHTML = 
+        
+        country.join('!<br>!')
+    </script>
+</body>
+</html>

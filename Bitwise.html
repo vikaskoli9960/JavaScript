@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Bitwise operators</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        // Bitwise and :: &
+        let and = 5 & 1
+        // 5 = 00000000000000000000000000000101
+        // 1 = 00000000000000000000000000000001
+        // 5 & 1 = 00000000000000000000000000000001
+
+        // Bitwise or :: |
+        let or = 5 | 1
+        // 5 = 00000000000000000000000000000101
+        // 1 = 00000000000000000000000000000001
+        // 5 | 1 = 00000000000000000000000000000101
+
+        // Bitwise xor :: ^
+        let xor = 5 ^ 1
+        // 5 = 00000000000000000000000000000101
+        // 1 = 00000000000000000000000000000001
+        // 5 ^ 1 = 00000000000000000000000000000100 
+
+        // Bitwise not :: ~
+        let not = ~5
+        // 5 = 00000000000000000000000000000101
+        // ~5 = 11111111111111111111111111111010 
+
+        // Bitwise left shift :: <<
+        let leftShift = 5 << 1
+        // 5 = 00000000000000000000000000000101
+        // 1 = 00000000000000000000000000000001
+        // 5 << 1 = 00000000000000000000000000001010 
+
+        // Bitwise right shift :: >>
+        let rightShift = 5 >> 1
+        // 5 = 00000000000000000000000000000101
+        // 1 = 00000000000000000000000000000001
+
+        document.querySelector('output').innerHTML = 
+        // and
+        // or
+        // xor
+        not
+        // leftShift
+        // rightShift
+    </script>
+</body>
+</html>

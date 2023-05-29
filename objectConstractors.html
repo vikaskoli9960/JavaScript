@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Object constructors</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        function Person(firstName, lastName, age, city) {
+            this.firstName = firstName
+            this.lastName = lastName
+            this.age = age
+            this.city = city
+        }
+
+        const father = new Person('Vinayak', 'Athalye', 60, 'Nagar')
+        father.country = 'India'
+
+        const mother = new Person('Vanita', 'Athalye', 58, 'Nagar')
+        mother.country = 'India'
+
+        document.querySelector('output').innerHTML =
+            `
+        <p>My father name is ${father.firstName} ${father.lastName}. And he is ${father.age} years old. He stay in ${father.city}, ${father.country}.</p>
+        <p>My mother name is ${mother.firstName} ${mother.lastName}. And she is ${mother.age} years old. She stay in ${mother.city}, ${mother.country}.</p>
+        `
+    </script>
+</body>
+
+</html>

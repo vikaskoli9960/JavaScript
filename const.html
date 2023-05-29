@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - const</title>
+   <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <h3></h3>
+    <output></output>
+
+    <script>
+        // Global scope
+        const a = 30
+        // 30
+        
+        // Local scope
+        {
+            const a = 50
+
+            document.querySelector('h3').innerHTML =
+            'Local scope a: ' + a
+        }
+
+        // Function scope
+        function abc() {
+            const a = 30
+            return a
+        }
+
+        document.querySelector('output').innerHTML = 
+        'Global scope a: ' + a + '<br>' +
+        'Function scope a: ' + abc()
+    </script>
+</body>
+</html>

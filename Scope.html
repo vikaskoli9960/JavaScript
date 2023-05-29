@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Scope</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        // Global scope
+        var a = 25
+        let variable = 3
+        let output = document.querySelector('output')
+
+        {
+            //  local scope
+            let variable = 2
+            // output.innerHTML = variable
+            var a = 12
+        }
+
+        function someFunction() {
+            //  function scope
+            let variable = 4
+            return variable
+        }
+
+        function another() {
+            //  function scope
+            let abc = 10
+            return abc
+        }
+        
+        output.innerHTML = 
+        variable
+        // someFunction()
+        // another()
+        // abc
+        // a
+        var a
+    </script>
+</body>
+</html>

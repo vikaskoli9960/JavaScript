@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <output></output>
+    <script>
+        class Person {
+            constructor(firstName, lastName, age) {
+                this.firstName = firstName
+                this.lastName = lastName
+                this.age = 22
+            }
+            birthYear() {
+                let year = new Date().getFullYear()
+                return year - this.age
+            }
+            fullName() {
+                return `${this.firstName} ${this.lastName}`
+            }
+        }
+
+        class Personal extends Person {
+            constructor(firstName, lastName, city, gender) {
+                super(firstName, lastName)
+                this.city = city
+                this.gender = gender
+            }
+            show() {
+                return `${this.fullName()} is stay in ${this.city}.`
+            }
+        }
+        let akash = new Personal('Akash', 'kale', 'akkalkot', 'male',)
+
+        document.querySelector('output').innerHTML =
+            akash.show()
+    </script>
+</body>
+
+</html>

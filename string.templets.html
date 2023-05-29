@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - String templates</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+           body {
+            width: 400px;
+            background-color: rgb(190, 249, 176);
+            margin: 10% auto;
+        }
+    </style>
+</head>
+<body>
+    <output></output>
+    <script>
+        let firstName = 'Ram'
+        let lastName = 'More'
+        let age = 23
+        document.querySelector('output').innerHTML = 
+        `<h2>${firstName} ${lastName} is ${age} years old.</h2>`
+    </script>
+</body>
+</html>

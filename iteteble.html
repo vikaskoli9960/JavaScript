@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Iterables</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        // Syntax:
+        // for(variable of iterable) {
+        //     code
+        // }
+
+        const content = ['a', 'b', 'c',]
+        let text = ''
+        for(let i of content) text += i + '<br>'
+        
+        document.querySelector('output').innerHTML = 
+        text
+        // content
+    </script>
+</body>
+</html>

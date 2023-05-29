@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       section {
+        padding: 20px;
+        background: lightcoral;
+       }
+       body{
+        width: 250px;
+        padding: 10px;
+       }
+    </style>
+</head>
+<body>
+    <section>
+        <script>
+            let heading = document.createElement('h1')
+            let text = document.createTextNode('This is heading')
+            heading.appendChild(text)
+
+            document.querySelector('section').appendChild(heading)
+        </script>
+    </section>
+</body>
+</html>

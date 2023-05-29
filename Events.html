@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onchange="checkAge()" placeholder="Please enter your age">
+    <button onclick="document.querySelector('h1').innerHTML = 'you have clicked'"> Click here</button>
+    <h1></h1>
+    <script>
+        function checkAge() {
+            let age = Number(document.querySelector('input').value)
+            let validate = (age >= 18) ? 'Old enaugh' : 'Too young'
+            document.querySelector('h1').innerHTML = validate
+        }
+    </script>
+</body>
+</html>

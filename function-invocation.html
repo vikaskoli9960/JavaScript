@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Function Invocation</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        const person = {
+            firstName: 'Suresh',
+            lastName: 'Patil',
+            age: 23,
+            fullName: function() {
+                return `${this.firstName} ${this.lastName}`
+            }
+        }
+
+        // Defined the sum function
+        function sum(first, second){
+            return first + second
+        }
+
+        // Invoked the sum function
+        let add = sum(20, 10)
+
+        document.querySelector('output').innerHTML = 
+        // Invoked the sum function
+        // sum(20, 10)
+
+        // Invoked the fullname method
+        person.fullName()
+    </script>
+</body>
+</html>

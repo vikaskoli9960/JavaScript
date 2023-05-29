@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Array Methods -JS </title>
+</head>
+<body>
+    <output></output>
+    <script>
+        // syntax: arrayName.forEach(callback)
+
+        const numbers = [12, 25, 35, 74, 502]
+        let text = '<ul>'
+        
+        numbers.forEach(result)
+        function result(value, index, array) {
+            text += `<li>${value}</li>`
+        }
+        text += '</ul>'
+        
+        document.querySelector('output').innerHTML = text
+    </script>
+</body>
+</html>

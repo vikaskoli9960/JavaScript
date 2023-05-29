@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Function Apply method</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        const person = {
+            firstName: 'Ganesh',
+            lastName: 'Patil',
+            age: 25,
+            fullName: function(age, city, country){
+                return `${this.firstName} ${this.lastName} is ${age} years old. And ${this.firstName} lived in ${city}, ${country}.`
+            }
+        }
+
+        const suresh = {
+            firstName: 'Suresh',
+            lastName: 'Pandit'
+        }
+        document.querySelector('output').innerHTML =
+        //person.fullName.call(suresh, 24, 'Kolhapur', 'India')
+        person.fullName.apply(suresh, [24, 'Kolhapur', 'India'])
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array - Methods</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        const numbers = ['India', 'China', 'USA', 'UK', 'France',10]
+        const country = ['Brasil',' UAE',' Russia',' qatar']
+
+        // Remove end value and position in the Array
+        let lastValue = country.pop()
+
+        // add position and value at the positin 
+        country.push(' Bangladesh')
+
+        // add value at the begining
+        country.unshift(' pakistan')
+
+        // remove position and value the begining
+        country.shift()
+
+        // remove the value
+        delete country[0]
+
+        country[0] = 'Bhutan'
+
+        document.querySelector('output').innerHTML = 
+        country
+        // lastValue
+        // typeof country[5].toString()
+        // ('<h4>List of countris: </h4>').concat(country,'<br>',country2)
+
+
+
+
+    </script>
+</body>
+</html>

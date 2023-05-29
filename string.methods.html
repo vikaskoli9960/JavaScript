@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    
+    <output></output>
+    <script>
+
+        let someText = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        let text = 'I have in india '
+        let extraSpace = '        This some text    '
+        let trimedText = extraSpace.trim()
+        let someNum = '2000'
+        let someCharacter = someText[1]
+        let characterAt = someText.charAt(0)
+        let unicode = someText.charCodeAt(0)
+        let someArray = 'A | B | C | D| E | F'
+
+        // syntax: slice(start, end)
+        // syntax:substring(start, end)
+        // syntax:substr(start, length)
+
+        document.querySelector('output').innerHTML = 
+        // someText.length
+        // someText.slice(-10, 20)
+        // someText.substring(-10, 20)
+        someText.substr(-10, 5)
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        const city = new Map()
+        city.set('akola', 12)
+        city.set(' vashim', 01)
+        city.set(true, 13)
+        city.set(' akkalkot', 14)
+        city.set(' solapur', 19)
+        city.set(' nagar', 23)
+
+        city.delete(true)
+        let text = ''
+        city.forEach(function(value, key){
+            text += `${key} : ${value}<br>`
+        })
+        document.querySelector('output').innerHTML =
+        //  Array.from(city)
+        // city.get('Pune')
+        // city.has('Pune')
+        // text 
+        // Array.from(city.keys()) 
+        // Array.from(city.values())
+        // true
+        city.size
+    </script>
+</body>
+</html>

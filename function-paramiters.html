@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Function parameters</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        /*
+            Syntax: 
+            function functionName(parameter 1, ...) {
+                code
+            }
+        */
+
+        function defaultParameter(a, b) {
+            // default
+            if(b == undefined) b = 0
+            return a + b
+        }
+
+        function defaultParameter(a = 10, b = 2) {
+            return a + b
+        }
+
+        // Rest parameter : ...
+        function sum(...arguments) {
+            let addition = 0
+
+            for(let i of arguments) 
+            addition += i
+            
+            return addition
+        }
+
+        document.querySelector('output').innerHTML = 
+        sum(10, 12, 23, 36, 85, -85, 34, 30, 23)
+    </script> 
+</body>
+</html>

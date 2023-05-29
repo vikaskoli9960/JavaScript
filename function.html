@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .background {
+            background: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="toggleBg()">Toggle Background</button>
+    <button onclick="changeText()">Change Text</button>
+    <h1>This is heading</h1>
+
+    <script>
+        function changeText() {
+            document.querySelector('h1').innerHTML = 'This is new heading'
+        }
+
+        function toggleBg() {
+            document.querySelector('body').classList.toggle('background')
+
+        }
+        
+    </script>
+    
+</body>
+</html>

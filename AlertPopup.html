@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    
+    <main class="wrapper">
+        <button onclick="popup()" class="button"> Confirm</button>
+        <button onclick="hello()" class="button"> Prompt</button>
+        <output></output>
+
+    <script>
+        alert('Hello there!')
+
+        let output = document.querySelector('output')
+
+        function popup() {
+            let text = 'you press the cancle button'
+            if(confirm('please press the button!'))
+            text = 'you press the ok button'
+            output.innerHTML = text
+        }
+
+        function hello() {
+            let person = prompt('please enter your name', 'vikas koli')
+            let text = 'hello${person}!, How are you?'
+            text = 'user cancelled the Prompt'
+
+            output.innerHTML = text
+        }
+    </script>
+
+</body>
+</html>

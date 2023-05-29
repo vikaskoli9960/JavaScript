@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+                   width: 300px;
+                   background-color: rgb(57, 251, 115);
+                   height: px;
+                   background-color: aqua;
+                   padding: 16px;
+                   margin: 10% auto;
+                   outline: 3px solid rgb(207, 6, 242);
+                   outline-offset: 1px;
+                   border-radius: 9px;
+               }
+           </style> 
+           
+</head>
+<body>
+    <output></output>
+    <script>
+         const menu = ['Home', 'About us', 'Services', 'Products', 'Blogs', 'Contact us']
+
+              let text = '<ul>'
+              for(let i=0; i <= 5; i++) {
+              text += `<li>${menu[i]}</li>`
+              }
+              text +='</ul>'
+        
+            document.querySelector('output').innerHTML = 
+            text
+    </script>
+</body>
+</html>

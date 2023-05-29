@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - Regular Expression</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        let text = 'This is another text'
+        let text2 = 'Is this all is?'
+        let find = text.search(/Text/i)
+        let replace = text.replace(/Text/i, 'new text')
+        let match = text2.match(/is/ig)
+        document.querySelector('output').innerHTML = 
+        // text
+        // find
+        // replace
+        match instanceof Array
+    </script>
+</body>
+</html>

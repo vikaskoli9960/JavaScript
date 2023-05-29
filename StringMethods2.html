@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>StringMethods2 - js</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    
+    <output></output>
+    <script>
+        let someText = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        let text = 'I live  in india '
+        let extraSpace = '                  '
+        let trimedText = extraSpace.trim()
+        let someNum = '2000'
+        let someCharacter = someText[1]
+        let CharacterAt = someText.charAt(0)
+        let unicode = someText.charCodeAt(0)
+        let someArray = 'A | B | C | D | F |'
+
+        //  syntax: slice(start, end)
+        //  syntax: substring(start, end)
+        //  syntax: substr(start, length)
+        //  syntax: replace('replace value', 'new value')
+        //  syntax: replaceAll('replace value', 'new value')
+        //  syntax: concat(another text,...)
+        //  syntax: padStart(Total length, Replace character)
+        //  syntax: padEnd(Total length, Replace character)
+
+
+        document.querySelector('output').innerHTML =
+        // text.replace(/india/ig, 'Bharat')
+        // text.replaceAll('India', 'Bharat')
+        // text.toUpperCase()
+        // text.toLowerCase()
+        // text.toLocaleUpperCase()
+        text.concat('.', ' And I am 22 years old. ', someText)
+        // ('This is some text. ').concat(text)
+        // extraSpace
+        // extraSpace.length
+        // extraSpace.trim().lengt
+        // extraSpace.trimStart().length
+        // extraSpace.trimEnd().length
+    </script>
+
+
+</body>
+</html>

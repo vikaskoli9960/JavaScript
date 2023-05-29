@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <output></output>
+    <script>
+        let Number = [90, 75, 41, 93, 63]
+        let unique = new Set(Number)
+        unique.add(11)
+        unique.add(40)
+
+        let newSet = []
+
+        unique.forEach(function(value){
+            newSet.push(value)
+        })
+        document.querySelector('output').innerHTML = 
+        // Number
+        // Array.from(unique.values())
+        //  Array.from(unique)
+        unique.has(40)
+        // newSet
+        //  Array.from(unique.values())
+        // unique.size
+
+    </script>
+</body>
+</html>

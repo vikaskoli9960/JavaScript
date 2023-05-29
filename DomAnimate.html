@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Animate</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .wrapper {
+            width: 200px;
+            height: 200px;
+            background: lightcoral;
+            position: relative;
+        }
+        .box {
+            width: 20px;
+            height: 20px;
+            background: white;
+            position: absolute;
+            box-shadow: 0 0 2px rgb(0 0 0 / 15%);
+        }
+        
+        .button {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="move()" class="button">Click here</button>
+    <section class="wrapper">
+        <article class="box"></article>
+    </section>
+
+    <script>
+        function move(){
+            let id = null
+            let box = document.querySelector('.box')
+            let position = 0
+
+            clearInterval(id)
+            id = setInterval(animation, 10)
+
+            function animation(){
+                position++
+                box.style.top = position + 'px'
+                box.style.left = position + 'px'
+
+                if(position == 180)  clearInterval(id)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function.HTML</title>
+    
+
+</head>
+
+<body>
+    
+    <button onclick="toggleBgbodybackground()">toggleBgbodybackground</button>
+    <button onclick="ChengText()">ChengText text</button>
+
+    <h1>this is heading</h1>
+    <script>
+        function ChengText() {
+            document.querySelector('h1').innerHTML = 'this is new heading'
+        }
+
+        function toggleBgbodybackground() {
+            document.querySelector('body').classList.toggle('background')
+        }
+    </script>
+</body>
+
+</html>

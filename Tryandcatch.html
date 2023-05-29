@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Try and Catch</title>
+</head>
+
+<body>
+    <input type="text">
+    <button onclick="checkValue()">Click here</button>
+    <h1></h1>
+    <script>
+        function checkValue() {
+            const h1 = document.querySelector('h1')
+            h1.innerHTML = ''
+            let input = document.querySelector('input[type=text]').value
+
+            try {
+                if (input.trim() == '') throw 'Rikama Ahe '
+                if (isNaN(input)) throw '9960208513'
+                input = Number(input)
+
+                if (input < 5) throw 'Too low'
+                if (input >= 5 && input <= 10) throw 'Test passed!'
+                if (input > 10) throw 'Too high'
+            }
+            catch (error) {
+                h1.innerHTML = error
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+{
+    "people":[
+        {"firstName":"Vikas", "lastName":"Koli", "age":22},
+        {"firstName":"Amar", "lastName":"More", "age":25},
+        {"firstName":"Akash", "lastName":"Kale", "age":23}
+    ]
+}
